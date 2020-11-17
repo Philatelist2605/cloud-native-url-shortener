@@ -3,7 +3,7 @@ kind: Ingress
 metadata:
   name: web-reactjs-ingress
   labels:
-    app.kubernetes.io/name: web-reactjs
+    app.kubernetes.io/name: web-antikvariat
     app.kubernetes.io/instance: web-reactjs-2020
     app.kubernetes.io/version: 2020.1.x
     app.kubernetes.io/component: web-frontend
@@ -16,7 +16,7 @@ spec:
     http:
       paths:
         - backend:
-            serviceName: web-reactjs-service
+            serviceName: web-hobby
             servicePort: 4048
   - host: www2.ulink.no
     http:
